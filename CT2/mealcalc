@@ -1,0 +1,11 @@
+def main():
+    meal_cost = float(input("Enter the cost of the meal: ")) # User inputs meal cost
+    tip = round(meal_cost * 0.18, 2) # Calculate 18% tip, rounded to 2 decimal places
+    print("The tip on that meal would be", tip) # Display tip
+    tax = round(meal_cost * 0.07, 2) # Calculate 7% tax, rounded to 2 decimal places
+    print("The tax on this meal would be", tax) # Display tax
+    total = round(meal_cost + tip + tax, 2) # Calculate total cost, rounded to 2 decimal places
+    print("The total cost of the meal would be", total) # Display total cost
+if __name__ == "__main__":
+    main()
+

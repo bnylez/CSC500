@@ -1,0 +1,11 @@
+
+def main():
+    current_time = int(input("What is the current time (0-23)? ")) # Current time input
+    wait_hours = int(input("How many hours to wait for the alarm? ")) # Wait time input
+
+    future_time = (current_time + wait_hours) % 24 # Calculate future time using modulo 24
+
+    print("The alarm will go off at:", future_time) # Display future time
+
+if __name__ == "__main__":
+    main()
